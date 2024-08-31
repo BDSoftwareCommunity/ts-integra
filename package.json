@@ -1,0 +1,38 @@
+{
+    "name": "@bdsoftware/ts-integra",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "private": true,
+    "main": "dist/index.js",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        }
+    },
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "update-deps": "cd scripts && update-deps.bat"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BDSoftwareCommunity/ts-integra.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/BDSoftwareCommunity/ts-integra/issues"
+    },
+    "homepage": "https://github.com/BDSoftwareCommunity/ts-integra#readme",
+    "devDependencies": {
+        "@types/node": "^20.4.1",
+        "typescript": "^5.1.6"
+    },
+    "dependencies": {
+        "@bdsoftware/ts-utils": "github:BDSoftwareCommunity/ts-utils",
+        "axios": "^1.4.0"
+    }
+}
